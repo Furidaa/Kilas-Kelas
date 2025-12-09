@@ -1,7 +1,7 @@
-function selisihHari(tanggal) {
-  const today = new Date();
+function selisihHari(tanggal, baseDate) {
+  // baseDate: tanggal acuan (misalnya dari data.minggu_ini.tanggal_hari_ini)
   const due = new Date(tanggal);
-  const diff = due - today;
+  const diff = due - baseDate;
   return Math.ceil(diff / (1000 * 60 * 60 * 24));
 }
 
@@ -17,8 +17,14 @@ function levelFromDays(days) {
   const container = document.getElementById("taskList");
   const chart = document.getElementById("taskChart");
 
+  // Gunakan tanggal dari minggu_ini sebagai tanggal acuan
+  const baseDate = new Date(data.minggu_ini.tanggal_hari_ini);
+
+  // ==========================
+  // KARTU TUGAS
+  // ==========================
   data.tugas.forEach((tugas) => {
-    const sisa = selisihHari(tugas.tanggal_kumpul);
+    const sisa = selisihHari(tugas.tanggal_kumpul, baseDate);
     const level = levelFromDays(sisa);
 
     const card = document.createElement("div");
@@ -32,10 +38,15 @@ function levelFromDays(days) {
     container.appendChild(card);
   });
 
-  // data untuk chart (hitung jumlah per level)
+  // ==========================
+  // DATA UNTUK DIAGRAM
+  // ==========================
   const counts = { urgent: 0, high: 0, normal: 0, later: 0 };
+
   data.tugas.forEach((t) => {
-    counts[levelFromDays(selisihHari(t.tanggal_kumpul))]++;
+    const sisa = selisihHari(t.tanggal_kumpul, baseDate);
+    const level = levelFromDays(sisa);
+    counts[level]++;
   });
 
   const maxVal = Math.max(...Object.values(counts), 1);
@@ -50,8 +61,11 @@ function levelFromDays(days) {
   config.forEach((c) => {
     const bar = document.createElement("div");
     bar.className = `bar ${c.class}`;
-    bar.style.height = (counts[c.key] / maxVal) * 100 + "%";
+    // Kalau count 0, beri sedikit tinggi supaya tetap kelihatan
+    const height = counts[c.key] === 0 ? 6 : (counts[c.key] / maxVal) * 100;
+    bar.style.height = height + "%";
     bar.innerHTML = `<span>${c.label}</span>`;
     chart.appendChild(bar);
   });
 })();
+
