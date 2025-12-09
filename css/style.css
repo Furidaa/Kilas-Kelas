@@ -646,3 +646,104 @@ main {
     font-size: 1.3rem;
   }
 }
+/* ==============================
+   CONTACT PREMIUM
+   ============================== */
+
+.contact-card {
+  position: relative;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.contact-name {
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.contact-role {
+  margin-top: 0.1rem;
+}
+
+.chip-role {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  color: #e0f2fe;
+}
+
+.contact-mk {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  max-width: 160px;
+  text-align: right;
+}
+
+.contact-body p + p {
+  margin-top: 0.18rem;
+}
+
+.contact-label {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-mute);
+  margin-right: 0.4rem;
+}
+
+/* Tombol-tombol kontak */
+.contact-actions {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(56, 189, 248, 0.55);
+  background: rgba(15, 23, 42, 0.95);
+  color: #e0f2fe;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast),
+    box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.btn-contact:hover {
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.28), #020617);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.9);
+}
+
+.btn-contact-secondary {
+  border-color: rgba(148, 163, 184, 0.6);
+  color: #e5e7eb;
+}
+
+.btn-contact-secondary:hover {
+  border-color: rgba(248, 250, 252, 0.7);
+}
+
