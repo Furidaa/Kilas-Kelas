@@ -1,27 +1,28 @@
 {
   "minggu_ini": {
-    "pekan_ke": 5,
-    "periode": "6 Mei 2025 – 11 Mei 2025",
-    "keterangan": "Minggu ke-5 perkuliahan, mulai masuk materi UTS.",
-    "hari_ini": "Selasa",
-    "tanggal_hari_ini": "6 Mei 2025"
+    "pekan_ke": 20,
+    "periode": "22 Desember 2025 – 31 Desember 2025",
+    "keterangan": "Akhir semester ganjil. Mahasiswa diharapkan menyelesaikan seluruh tugas dan mempersiapkan diri untuk evaluasi akhir.",
+    "hari_ini": "Senin",
+    "tanggal_hari_ini": "22 Desember 2025"
   },
+
   "jadwal_mk": [
     {
-      "kode": "SIM-301",
-      "judul": "Sistem Informasi Manajemen",
+      "kode": "IF-501",
+      "judul": "Pengembangan Aplikasi Web",
       "sks": 3,
       "mode": "Online",
-      "platform": "LMS Kampus",
+      "platform": "LMS Universitas Pamulang",
       "dosen": "Dr. Naufal Pratama",
       "hari": "Senin",
       "jam": "09.00 – 10.40",
-      "pertemuan_ke": 7,
-      "deadline_forum": "2025-05-08",
-      "link": "https://lmskampus.ac.id/sim301"
+      "pertemuan_ke": 20,
+      "deadline_forum": "2025-12-27",
+      "link": "https://lms.unpam.ac.id/if501"
     },
     {
-      "kode": "BD-202",
+      "kode": "IF-502",
       "judul": "Basis Data Lanjut",
       "sks": 3,
       "mode": "Offline",
@@ -29,64 +30,98 @@
       "dosen": "Rina Lestari, M.Kom.",
       "hari": "Rabu",
       "jam": "13.00 – 14.40",
-      "pertemuan_ke": 6,
-      "deadline_forum": "2025-05-10",
-      "link": "https://drive.google.com/bd202"
+      "pertemuan_ke": 20,
+      "deadline_forum": "2025-12-28",
+      "link": "https://lms.unpam.ac.id/if502"
+    },
+    {
+      "kode": "IF-503",
+      "judul": "Manajemen Proyek Perangkat Lunak",
+      "sks": 2,
+      "mode": "Online",
+      "platform": "Google Meet",
+      "dosen": "Winter Adi Nugraha, M.Kom.",
+      "hari": "Jumat",
+      "jam": "15.00 – 16.40",
+      "pertemuan_ke": 20,
+      "deadline_forum": "2025-12-29",
+      "link": "https://meet.google.com/if503"
     }
   ],
+
   "tugas": [
     {
-      "mata_kuliah": "Sistem Informasi Manajemen",
-      "judul": "Analisis Proses Bisnis",
-      "tanggal_kumpul": "2025-05-09",
-      "catatan": "Upload laporan PDF maksimal 10 halaman."
+      "mata_kuliah": "Pengembangan Aplikasi Web",
+      "judul": "Final Project: KILAS KELAS",
+      "tanggal_kumpul": "2025-12-29",
+      "catatan": "Kumpulkan link GitHub Pages dan repositori GitHub sebelum pukul 23.59 WIB."
     },
     {
       "mata_kuliah": "Basis Data Lanjut",
-      "judul": "Desain ERD Sistem Perpustakaan",
-      "tanggal_kumpul": "2025-05-20",
-      "catatan": "Gunakan notasi Crow’s Foot."
+      "judul": "Optimasi Query & Indexing",
+      "tanggal_kumpul": "2025-12-27",
+      "catatan": "Upload script SQL dan laporan singkat dalam format PDF."
     },
     {
-      "mata_kuliah": "Kewirausahaan Digital",
-      "judul": "Pitch Deck Produk",
-      "tanggal_kumpul": "2025-05-15",
-      "catatan": "Presentasi maksimal 7 slide."
+      "mata_kuliah": "Manajemen Proyek Perangkat Lunak",
+      "judul": "Laporan Akhir Manajemen Proyek",
+      "tanggal_kumpul": "2025-12-31",
+      "catatan": "Lampirkan timeline, risiko, dan evaluasi hasil proyek KILAS KELAS."
     }
   ],
+
   "kontak": {
-    "ketua_kelas": {
-      "nama": "Alya Putri",
-      "nim": "231011223344",
-      "wa": "0812-3456-7890",
-      "email": "alya.putri@kampus.ac.id",
-      "catatan": "Hubungi Alya untuk koordinasi jadwal dan informasi kelas."
+    "ketua_kelompok": {
+      "nama": "Nyoman Astika",
+      "nim": "201011200001",
+      "wa": "0812-0000-1111",
+      "email": "nyoman.astika@unpam.ac.id",
+      "catatan": "Ketua Kelompok."
     },
+    "anggota_kelompok": [
+      {
+        "nama": "Furida Adi Fardana",
+        "wa": "0813-2222-4444",
+        "email": "furida.fardana@unpam.ac.id"
+      },
+      {
+        "nama": "Winter Agus Saputra",
+        "wa": "0812-7777-5555",
+        "email": "winter.saputra@unpam.ac.id"
+      }
+    ],
     "dosen": [
       {
-        "mata_kuliah": "Sistem Informasi Manajemen",
+        "mata_kuliah": "Pengembangan Aplikasi Web",
         "nama": "Dr. Naufal Pratama",
         "wa": "0813-5555-1111",
-        "email": "naufal.pratama@kampus.ac.id"
+        "email": "naufal.pratama@unpam.ac.id"
       },
       {
         "mata_kuliah": "Basis Data Lanjut",
         "nama": "Rina Lestari, M.Kom.",
         "wa": "0819-7777-3333",
-        "email": "rina.lestari@kampus.ac.id"
+        "email": "rina.lestari@unpam.ac.id"
+      },
+      {
+        "mata_kuliah": "Manajemen Proyek Perangkat Lunak",
+        "nama": "Winter Adi Nugraha, M.Kom.",
+        "wa": "0812-8888-2222",
+        "email": "winter.nugraha@unpam.ac.id"
       }
     ]
   },
+
   "info_umum": [
     {
-      "judul": "Seminar Nasional Data Science",
-      "tanggal_info": "3 Mei 2025",
-      "isi": "Pendaftaran dibuka sampai 20 Mei 2025. Link: https://kampus.ac.id/seminar-ds"
+      "judul": "Tim Pengembang Aplikasi KILAS KELAS",
+      "tanggal_info": "22 Desember 2025",
+      "isi": "Proyek ini dikembangkan oleh kelompok Teknik Informatika Univeristas Pamulang yang beranggotakan: Nyoman Astika, Furida Adi Fardana, dan Winter Agus Saputra."
     },
     {
-      "judul": "Pengumuman Pembayaran UKT",
-      "tanggal_info": "1 Mei 2025",
-      "isi": "Batas pembayaran UKT gelombang 1 sampai 30 Mei 2025."
+      "judul": "Akhir Perkuliahan Semester Ganjil",
+      "tanggal_info": "20 Desember 2025",
+      "isi": "Seluruh kegiatan perkuliahan reguler berakhir pada akhir Desember 2025. Mahasiswa diharapkan menyelesaikan tugas dan persiapan evaluasi akhir tepat waktu."
     }
   ]
 }
