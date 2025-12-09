@@ -1,36 +1,46 @@
 (async function () {
   const data = await loadKilasData();
-  const wrap = document.getElementById("tableSchedule");
+  const container = document.getElementById("tableSchedule");
 
-  const rows = data.jadwal_mk
-    .map(
-      (mk) => `
-    <tr>
-      <td>${mk.kode}</td>
-      <td>${mk.judul}</td>
-      <td>${mk.sks}</td>
-      <td>${mk.hari}<br/><span class="small-text">${mk.jam}</span></td>
-      <td>${mk.mode}<br/><span class="small-text">${mk.platform}</span></td>
-      <td>Pertemuan ke-${mk.pertemuan_ke}</td>
-      <td><a href="${mk.link}" target="_blank">Buka</a></td>
-    </tr>`
-    )
-    .join("");
-
-  wrap.innerHTML = `
-    <table>
-      <thead>
+  const table = document.createElement("table");
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Kode</th>
+        <th>Mata Kuliah</th>
+        <th>SKS</th>
+        <th>Hari</th>
+        <th>Jam</th>
+        <th>Mode</th>
+        <th>Pertemuan</th>
+        <th>Platform / Ruang</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${data.jadwal_mk
+        .map(
+          (mk) => `
         <tr>
-          <th>Kode</th>
-          <th>Mata Kuliah</th>
-          <th>SKS</th>
-          <th>Jadwal</th>
-          <th>Mode</th>
-          <th>Pertemuan</th>
-          <th>Link</th>
+          <td>${mk.kode}</td>
+          <td>${mk.judul}</td>
+          <td>${mk.sks}</td>
+          <td>${mk.hari}</td>
+          <td>${mk.jam}</td>
+          <td>${mk.mode}</td>
+          <td>${mk.pertemuan_ke}</td>
+          <td>${mk.platform}</td>
+          <td>${mk.link ? `<a href="${mk.link}" target="_blank">Buka</a>` : "-"}</td>
         </tr>
-      </thead>
-      <tbody>${rows}</tbody>
-    </table>
+      `
+        )
+        .join("")}
+    </tbody>
+  `;
+
+  container.appendChild(table);
+})();
+
   `;
 })();
+
