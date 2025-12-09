@@ -71,45 +71,50 @@
   ],
 
   "kontak": {
-    "ketua_kelas": {
-      "nama": "Nyoman Astika",
-      "wa": "0812-0000-1111",
-      "email": "nyoman.astika@unpam.ac.id",
-      "catatan": "Ketua Kelompok."
-    },
-    "anggota_kelompok": [
-      {
-        "nama": "Furida Adi Fardana",
-        "wa": "0813-2222-4444",
-        "email": "furida.fardana@unpam.ac.id"
-      },
-      {
-        "nama": "Winter Agus Saputra",
-        "wa": "0812-7777-5555",
-        "email": "winter.saputra@unpam.ac.id"
-      }
-    ],
-    "dosen": [
-      {
-        "mata_kuliah": "Pengembangan Aplikasi Web",
-          "nama": "Dr. Naufal Pratama",
-          "wa": "0813-5555-1111",
-          "email": "naufal.pratama@unpam.ac.id"
-      },
-      {
-        "mata_kuliah": "Basis Data Lanjut",
-        "nama": "Rina Lestari, M.Kom.",
-        "wa": "0819-7777-3333",
-        "email": "rina.lestari@unpam.ac.id"
-      },
-      {
-        "mata_kuliah": "Manajemen Proyek Perangkat Lunak",
-        "nama": "Winter Adi Nugraha, M.Kom.",
-        "wa": "0812-8888-2222",
-        "email": "winter.nugraha@unpam.ac.id"
-      }
-    ]
+  "ketua_kelompok": {
+    "nama": "Nyoman Astika",
+    "nim": "201011200001",
+    "wa": "0812-0000-1111",
+    "email": "nyoman.astika@unpam.ac.id",
+    "catatan": "Ketua kelompok proyek KILAS KELAS."
   },
+
+  "anggota_kelompok": [
+    {
+      "nama": "Furida Adi Fardana",
+      "peran": "Front-End Developer",
+      "wa": "0813-2222-4444",
+      "email": "furida.fardana@unpam.ac.id"
+    },
+    {
+      "nama": "Winter Agus Saputra",
+      "peran": "Back-End Developer",
+      "wa": "0812-7777-5555",
+      "email": "winter.saputra@unpam.ac.id"
+    }
+  ],
+
+  "dosen": [
+    {
+      "mata_kuliah": "Pengembangan Aplikasi Web",
+      "nama": "Dr. Naufal Pratama",
+      "wa": "0813-5555-1111",
+      "email": "naufal.pratama@unpam.ac.id"
+    },
+    {
+      "mata_kuliah": "Basis Data Lanjut",
+      "nama": "Rina Lestari, M.Kom.",
+      "wa": "0819-7777-3333",
+      "email": "rina.lestari@unpam.ac.id"
+    },
+    {
+      "mata_kuliah": "Manajemen Proyek Perangkat Lunak",
+      "nama": "Winter Adi Nugraha, M.Kom.",
+      "wa": "0812-8888-2222",
+      "email": "winter.nugraha@unpam.ac.id"
+    }
+  ]
+},
 
   "info_umum": [
     {
@@ -124,4 +129,5 @@
     }
   ]
 }
+
 
