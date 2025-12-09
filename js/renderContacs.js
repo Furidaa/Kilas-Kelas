@@ -4,11 +4,11 @@
   const list = document.getElementById("lecturerContacts");
 
   // ==========================
-  // KETUA KELAS
+  // KETUA KELOMPOK
   // ==========================
-  const k = data.kontak.ketua_kelas;
+  const k = data.kontak.ketua_kelompok;
   info.innerHTML = `
-    <p><strong>Ketua Kelas</strong></p>
+    <p><strong>Ketua Kelompok</strong></p>
     <p>${k.nama} (${k.nim})</p>
     <p class="small-text">WhatsApp: ${k.wa}</p>
     <p class="small-text">Email: ${k.email}</p>
@@ -18,32 +18,18 @@
   // ==========================
   // ANGGOTA KELOMPOK
   // ==========================
-  if (data.kontak.anggota_kelompok && Array.isArray(data.kontak.anggota_kelompok)) {
-    data.kontak.anggota_kelompok.forEach((a) => {
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-        <p><strong>Anggota Kelompok</strong></p>
-        <p>${a.nama}</p>
-        ${
-          a.peran
-            ? `<p class="small-text">Peran: ${a.peran}</p>`
-            : ""
-        }
-        ${
-          a.wa
-            ? `<p class="small-text">WhatsApp: ${a.wa}</p>`
-            : ""
-        }
-        ${
-          a.email
-            ? `<p class="small-text">Email: ${a.email}</p>`
-            : ""
-        }
-      `;
-      list.appendChild(card);
-    });
-  }
+  data.kontak.anggota_kelompok.forEach((a) => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <p><strong>Anggota Kelompok</strong></p>
+      <p>${a.nama}</p>
+      <p class="small-text">Peran: ${a.peran}</p>
+      <p class="small-text">WhatsApp: ${a.wa}</p>
+      <p class="small-text">Email: ${a.email}</p>
+    `;
+    list.appendChild(card);
+  });
 
   // ==========================
   // DOSEN PENGAMPU
