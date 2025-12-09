@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0b1120;
+  color: #e5e7eb;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1.2rem;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #1f2937;
+}
+
+.topbar h1 {
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+}
+
+.time-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.hero {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(135deg, #020617, #1e293b);
+  border-bottom: 1px solid #1f2937;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 3rem 1.5rem;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  margin-bottom: 1.5rem;
+  color: #cbd5f5;
+}
+
+/* Sections */
+
+.section {
+  padding: 2rem 1.2rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  border-left: 4px solid #38bdf8;
+  padding-left: 0.6rem;
+}
+
+/* Cards & table */
+
+.card {
+  background: #020617;
+  border-radius: 0.75rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid #1f2937;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.7);
+}
+
+.small-text {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.card-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #020617;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid #1f2937;
+}
+
+.table-wrapper th,
+.table-wrapper td {
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+.table-wrapper thead {
+  background: #111827;
+}
+
+.table-wrapper tbody tr:nth-child(even) {
+  background: #020617;
+}
+
+.table-wrapper tbody tr:nth-child(odd) {
+  background: #030712;
+}
+
+/* Buttons */
+
+.btn-primary,
+.btn-ghost {
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  border: 1px solid #38bdf8;
+  background: #0ea5e9;
+  color: #020617;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-primary:hover {
+  background: #38bdf8;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #e5e7eb;
+  border-color: #4b5563;
+}
+
+.btn-ghost:hover {
+  background: #111827;
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  inset: 0 60% 0 0;
+  max-width: 260px;
+  background: #020617;
+  border-right: 1px solid #1f2937;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease-out;
+  z-index: 30;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #1f2937;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0.8rem 0.8rem 1.2rem;
+}
+
+.sidebar nav li {
+  margin-bottom: 0.3rem;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.sidebar nav a:hover {
+  background: #111827;
+}
+
+/* Chart */
+
+.chart-bar {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.6rem;
+  height: 180px;
+  padding: 1rem;
+  background: #020617;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+}
+
+.chart-bar .bar {
+  flex: 1;
+  border-radius: 0.4rem 0.4rem 0 0;
+  position: relative;
+}
+
+.chart-bar .bar span {
+  position: absolute;
+  bottom: -1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/* Warna level */
+
+.level-urgent {
+  background: #ef4444;
+}
+
+.level-high {
+  background: #f97316;
+}
+
+.level-normal {
+  background: #fbbf24;
+}
+
+.level-later {
+  background: #22c55e;
+}
+
+.legend {
+  margin-top: 0.75rem;
+  list-style: none;
+  font-size: 0.85rem;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.legend-box {
+  width: 12px;
+  height: 12px;
+  border-radius: 0.2rem;
+  display: inline-block;
+}
+
+/* Footer */
+
+.footer {
+  padding: 1.2rem 1.2rem 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-inline: 2.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2.4rem;
+  }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>KILAS KELAS – Katalog Informasi Kuliah</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h2>Navigasi</h2>
+      <button id="sidebarClose">&times;</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#week-info">Minggu Ini</a></li>
+        <li><a href="#meetings">Info Pertemuan</a></li>
+        <li><a href="#tasks">Info Tugas</a></li>
+        <li><a href="#task-chart">Diagram Tugas</a></li>
+        <li><a href="#contacts">Info Kontak</a></li>
+        <li><a href="#general">Info Umum</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <button id="sidebarToggle" class="btn-ghost">☰</button>
+    <h1>KILAS KELAS</h1>
+    <div id="currentTime" class="time-label">--:--:--</div>
+  </header>
+
+  <!-- Hero / Halaman Utama -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h2>Pusat Informasi Kuliah Satu Halaman</h2>
+      <p>Semua jadwal, tugas, dan pengumuman penting kelas Anda dalam satu tampilan.</p>
+      <button class="btn-primary" onclick="document.getElementById('week-info').scrollIntoView({behavior:'smooth'})">
+        Lihat Minggu Ini
+      </button>
+    </div>
+  </section>
+
+  <!-- Info Pekan Ini -->
+  <section id="week-info" class="section">
+    <h2>Minggu Ini</h2>
+    <div id="weekSummary" class="card"></div>
+    <div class="small-text" id="weekNotice"></div>
+  </section>
+
+  <!-- Info Pertemuan Mata Kuliah -->
+  <section id="meetings" class="section">
+    <h2>Info Pertemuan Mata Kuliah</h2>
+    <div id="tableSchedule" class="table-wrapper"></div>
+  </section>
+
+  <!-- Info Tugas -->
+  <section id="tasks" class="section">
+    <h2>Daftar Tugas</h2>
+    <div id="taskList" class="card-list"></div>
+  </section>
+
+  <!-- Diagram Prioritas Tugas -->
+  <section id="task-chart" class="section">
+    <h2>Diagram Prioritas Tugas</h2>
+    <div id="taskChart" class="chart-bar"></div>
+    <ul class="legend">
+      <li><span class="legend-box level-urgent"></span> Sangat Tinggi (≤ 3 hari)</li>
+      <li><span class="legend-box level-high"></span> Tinggi (≤ 7 hari)</li>
+      <li><span class="legend-box level-normal"></span> Normal (≤ 15 hari)</li>
+      <li><span class="legend-box level-later"></span> Nanti Saja (&gt; 15 hari)</li>
+    </ul>
+  </section>
+
+  <!-- Info Kontak -->
+  <section id="contacts" class="section">
+    <h2>Info Kontak</h2>
+    <div id="contactInfo" class="card"></div>
+    <div id="lecturerContacts" class="card-list"></div>
+  </section>
+
+  <!-- Info Umum Lainnya -->
+  <section id="general" class="section">
+    <h2>Info Umum Lainnya</h2>
+    <div id="generalInfo" class="card-list"></div>
+    <button class="btn-ghost" onclick="location.reload()">Refresh Informasi</button>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 KILAS KELAS – dibuat untuk membantu mahasiswa mengorganisir informasi kuliah.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/timeNow.js"></script>
+  <script src="js/loadData.js"></script>
+  <script src="js/renderWeek.js"></script>
+  <script src="js/renderMeetings.js"></script>
+  <script src="js/renderTasks.js"></script>
+  <script src="js/renderContacts.js"></script>
+  <script src="js/renderGeneral.js"></script>
+  <script src="js/sidebar.js"></script>
+</body>
+</html>

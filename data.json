@@ -1,0 +1,92 @@
+{
+  "minggu_ini": {
+    "pekan_ke": 5,
+    "periode": "6 Mei 2025 – 11 Mei 2025",
+    "keterangan": "Minggu ke-5 perkuliahan, mulai masuk materi UTS.",
+    "hari_ini": "Selasa",
+    "tanggal_hari_ini": "6 Mei 2025"
+  },
+  "jadwal_mk": [
+    {
+      "kode": "SIM-301",
+      "judul": "Sistem Informasi Manajemen",
+      "sks": 3,
+      "mode": "Online",
+      "platform": "LMS Kampus",
+      "dosen": "Dr. Naufal Pratama",
+      "hari": "Senin",
+      "jam": "09.00 – 10.40",
+      "pertemuan_ke": 7,
+      "deadline_forum": "2025-05-08",
+      "link": "https://lmskampus.ac.id/sim301"
+    },
+    {
+      "kode": "BD-202",
+      "judul": "Basis Data Lanjut",
+      "sks": 3,
+      "mode": "Offline",
+      "platform": "Ruang D305",
+      "dosen": "Rina Lestari, M.Kom.",
+      "hari": "Rabu",
+      "jam": "13.00 – 14.40",
+      "pertemuan_ke": 6,
+      "deadline_forum": "2025-05-10",
+      "link": "https://drive.google.com/bd202"
+    }
+  ],
+  "tugas": [
+    {
+      "mata_kuliah": "Sistem Informasi Manajemen",
+      "judul": "Analisis Proses Bisnis",
+      "tanggal_kumpul": "2025-05-09",
+      "catatan": "Upload laporan PDF maksimal 10 halaman."
+    },
+    {
+      "mata_kuliah": "Basis Data Lanjut",
+      "judul": "Desain ERD Sistem Perpustakaan",
+      "tanggal_kumpul": "2025-05-20",
+      "catatan": "Gunakan notasi Crow’s Foot."
+    },
+    {
+      "mata_kuliah": "Kewirausahaan Digital",
+      "judul": "Pitch Deck Produk",
+      "tanggal_kumpul": "2025-05-15",
+      "catatan": "Presentasi maksimal 7 slide."
+    }
+  ],
+  "kontak": {
+    "ketua_kelas": {
+      "nama": "Alya Putri",
+      "nim": "231011223344",
+      "wa": "0812-3456-7890",
+      "email": "alya.putri@kampus.ac.id",
+      "catatan": "Hubungi Alya untuk koordinasi jadwal dan informasi kelas."
+    },
+    "dosen": [
+      {
+        "mata_kuliah": "Sistem Informasi Manajemen",
+        "nama": "Dr. Naufal Pratama",
+        "wa": "0813-5555-1111",
+        "email": "naufal.pratama@kampus.ac.id"
+      },
+      {
+        "mata_kuliah": "Basis Data Lanjut",
+        "nama": "Rina Lestari, M.Kom.",
+        "wa": "0819-7777-3333",
+        "email": "rina.lestari@kampus.ac.id"
+      }
+    ]
+  },
+  "info_umum": [
+    {
+      "judul": "Seminar Nasional Data Science",
+      "tanggal_info": "3 Mei 2025",
+      "isi": "Pendaftaran dibuka sampai 20 Mei 2025. Link: https://kampus.ac.id/seminar-ds"
+    },
+    {
+      "judul": "Pengumuman Pembayaran UKT",
+      "tanggal_info": "1 Mei 2025",
+      "isi": "Batas pembayaran UKT gelombang 1 sampai 30 Mei 2025."
+    }
+  ]
+}
