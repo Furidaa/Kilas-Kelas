@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <title>KILAS KELAS – Katalog Informasi Kuliah</title>
+  <title>KILAS KELAS – Pusat Informasi Akademik</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -16,10 +16,10 @@
     <nav>
       <ul>
         <li><a href="#hero">Beranda</a></li>
-        <li><a href="#week-info">Minggu Ini</a></li>
+        <li><a href="#week-info">Info Pekan</a></li>
         <li><a href="#meetings">Info Pertemuan</a></li>
         <li><a href="#tasks">Info Tugas</a></li>
-        <li><a href="#task-chart">Diagram Tugas</a></li>
+        <li><a href="#task-chart">Diagram Prioritas</a></li>
         <li><a href="#contacts">Info Kontak</a></li>
         <li><a href="#general">Info Umum</a></li>
       </ul>
@@ -33,73 +33,105 @@
     <div id="currentTime" class="time-label">--:--:--</div>
   </header>
 
-  <!-- Hero / Halaman Utama -->
+  <!-- Halaman Utama / Hero -->
   <section id="hero" class="hero">
     <div class="hero-content">
-      <h2>Pusat Informasi Kuliah Satu Halaman</h2>
-      <p>Semua jadwal, tugas, dan pengumuman penting kelas Anda dalam satu tampilan.</p>
-      <button class="btn-primary" onclick="document.getElementById('week-info').scrollIntoView({behavior:'smooth'})">
-        Lihat Minggu Ini
+      <h2>KILAS KELAS – Pusat Informasi Akademik Terintegrasi</h2>
+      <p>
+        Seluruh jadwal, tugas, dan pengumuman perkuliahan Anda tersaji dalam satu halaman
+        yang rapi, cepat diakses, dan mudah dipahami. Dibuat untuk mendukung proses belajar
+        yang lebih teratur dan efisien.
+      </p>
+      <button class="btn-primary"
+        onclick="document.getElementById('week-info').scrollIntoView({behavior:'smooth'})">
+        Lihat Informasi Minggu Ini
       </button>
     </div>
   </section>
 
   <!-- Info Pekan Ini -->
   <section id="week-info" class="section">
-    <h2>Minggu Ini</h2>
+    <h2>Informasi Minggu Perkuliahan</h2>
+    <p class="small-text" style="margin-bottom:0.75rem;">
+      Bagian ini menampilkan rangkuman perkuliahan pada minggu berjalan, mulai dari pekan ke
+      berapa, periode tanggal, hingga catatan penting yang perlu diperhatikan mahasiswa.
+    </p>
     <div id="weekSummary" class="card"></div>
     <div class="small-text" id="weekNotice"></div>
   </section>
 
   <!-- Info Pertemuan Mata Kuliah -->
   <section id="meetings" class="section">
-    <h2>Info Pertemuan Mata Kuliah</h2>
+    <h2>Jadwal &amp; Informasi Pertemuan Mata Kuliah</h2>
+    <p class="small-text" style="margin-bottom:0.75rem;">
+      Seluruh jadwal mata kuliah tersusun dalam tabel yang mudah dibaca. Informasi meliputi
+      waktu pertemuan, mode pembelajaran (online/offline), platform, nama dosen, nomor
+      pertemuan, dan tautan menuju materi atau LMS terkait.
+    </p>
     <div id="tableSchedule" class="table-wrapper"></div>
   </section>
 
   <!-- Info Tugas -->
   <section id="tasks" class="section">
-    <h2>Daftar Tugas</h2>
+    <h2>Daftar Tugas Mata Kuliah</h2>
+    <p class="small-text" style="margin-bottom:0.75rem;">
+      Semua tugas dari masing-masing mata kuliah ditampilkan secara terstruktur agar mahasiswa
+      mudah melihat tenggat waktu, judul tugas, dan catatan tambahan dari dosen.
+    </p>
     <div id="taskList" class="card-list"></div>
   </section>
 
   <!-- Diagram Prioritas Tugas -->
   <section id="task-chart" class="section">
-    <h2>Diagram Prioritas Tugas</h2>
+    <h2>Diagram Prioritas Penyelesaian Tugas</h2>
+    <p class="small-text" style="margin-bottom:0.75rem;">
+      Diagram ini mengelompokkan tugas berdasarkan tingkat urgensinya sehingga mahasiswa dapat
+      menentukan mana yang harus diselesaikan terlebih dahulu.
+    </p>
     <div id="taskChart" class="chart-bar"></div>
     <ul class="legend">
-      <li><span class="legend-box level-urgent"></span> Sangat Tinggi (≤ 3 hari)</li>
-      <li><span class="legend-box level-high"></span> Tinggi (≤ 7 hari)</li>
-      <li><span class="legend-box level-normal"></span> Normal (≤ 15 hari)</li>
-      <li><span class="legend-box level-later"></span> Nanti Saja (&gt; 15 hari)</li>
+      <li><span class="legend-box level-urgent"></span> Sangat Tinggi — sisa ≤ 3 hari</li>
+      <li><span class="legend-box level-high"></span> Tinggi — sisa 4–7 hari</li>
+      <li><span class="legend-box level-normal"></span> Normal — sisa 8–15 hari</li>
+      <li><span class="legend-box level-later"></span> Bisa Menyusul — sisa &gt; 15 hari</li>
     </ul>
   </section>
 
   <!-- Info Kontak -->
   <section id="contacts" class="section">
-    <h2>Info Kontak</h2>
+    <h2>Kontak Ketua Kelas &amp; Dosen Pengampu</h2>
+    <p class="small-text" style="margin-bottom:0.75rem;">
+      Informasi kontak ketua kelas dan dosen pengampu mata kuliah ditampilkan untuk memudahkan
+      komunikasi terkait perkuliahan. Tersedia nomor WhatsApp dan email resmi yang dapat
+      digunakan ketika diperlukan.
+    </p>
     <div id="contactInfo" class="card"></div>
     <div id="lecturerContacts" class="card-list"></div>
   </section>
 
   <!-- Info Umum Lainnya -->
   <section id="general" class="section">
-    <h2>Info Umum Lainnya</h2>
+    <h2>Pengumuman Umum Perkuliahan</h2>
+    <p class="small-text" style="margin-bottom:0.75rem;">
+      Bagian ini berisi informasi tambahan seperti seminar, pembayaran UKT, acara akademik,
+      maupun pengumuman lain yang relevan bagi mahasiswa. Informasi akan diperbarui sesuai
+      kebutuhan.
+    </p>
     <div id="generalInfo" class="card-list"></div>
     <button class="btn-ghost" onclick="location.reload()">Refresh Informasi</button>
   </section>
 
   <footer class="footer">
-    <p>&copy; 2025 KILAS KELAS – dibuat untuk membantu mahasiswa mengorganisir informasi kuliah.</p>
+    <p>&copy; 2025 KILAS KELAS – Proyek Tugas Kelompok Teknik Informatika, Universitas Pamulang.</p>
   </footer>
 
   <!-- Script -->
-  <script src="js/timeNow.js"></script>
+  <script src="js/timenow.js"></script>
   <script src="js/loadData.js"></script>
   <script src="js/renderWeek.js"></script>
   <script src="js/renderMeetings.js"></script>
   <script src="js/renderTasks.js"></script>
-  <script src="js/renderContacts.js"></script>
+  <script src="js/renderContacs.js"></script>
   <script src="js/renderGeneral.js"></script>
   <script src="js/sidebar.js"></script>
 </body>
