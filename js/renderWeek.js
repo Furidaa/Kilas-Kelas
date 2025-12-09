@@ -4,11 +4,14 @@
   const note = document.getElementById("weekNotice");
 
   const m = data.minggu_ini;
+
   box.innerHTML = `
     <p><strong>Pekan ke-${m.pekan_ke}</strong></p>
     <p>Periode: ${m.periode}</p>
-    <p>${m.keterangan}</p>
-    <p style="margin-top:0.5rem;">Hari ini: <strong>${m.hari_ini}</strong>, ${m.tanggal_hari_ini}</p>
+    <p class="small-text">${m.keterangan}</p>
   `;
-  
+
+  if (note) {
+    note.textContent = `Hari ini: ${m.hari_ini}, ${m.tanggal_hari_ini}`;
+  }
 })();
