@@ -71,9 +71,8 @@
   ],
 
   "kontak": {
-    "ketua_kelompok": {
+    "ketua_kelas": {
       "nama": "Nyoman Astika",
-      "nim": "201011200001",
       "wa": "0812-0000-1111",
       "email": "nyoman.astika@unpam.ac.id",
       "catatan": "Ketua Kelompok."
@@ -93,9 +92,9 @@
     "dosen": [
       {
         "mata_kuliah": "Pengembangan Aplikasi Web",
-        "nama": "Dr. Naufal Pratama",
-        "wa": "0813-5555-1111",
-        "email": "naufal.pratama@unpam.ac.id"
+          "nama": "Dr. Naufal Pratama",
+          "wa": "0813-5555-1111",
+          "email": "naufal.pratama@unpam.ac.id"
       },
       {
         "mata_kuliah": "Basis Data Lanjut",
@@ -125,3 +124,4 @@
     }
   ]
 }
+
