@@ -70,7 +70,3 @@
     }
   }
 })();
-
-  container.appendChild(table);
-})();
-
