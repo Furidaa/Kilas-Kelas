@@ -70,10 +70,9 @@
     }
   ],
 
-  "kontak": {
+ "kontak": {
   "ketua_kelompok": {
     "nama": "Nyoman Astika",
-    "nim": "201011200001",
     "wa": "0812-0000-1111",
     "email": "nyoman.astika@unpam.ac.id",
     "catatan": "Ketua kelompok proyek KILAS KELAS."
@@ -82,13 +81,11 @@
   "anggota_kelompok": [
     {
       "nama": "Furida Adi Fardana",
-      "peran": "Front-End Developer",
       "wa": "0813-2222-4444",
       "email": "furida.fardana@unpam.ac.id"
     },
     {
       "nama": "Winter Agus Saputra",
-      "peran": "Back-End Developer",
       "wa": "0812-7777-5555",
       "email": "winter.saputra@unpam.ac.id"
     }
@@ -129,5 +126,6 @@
     }
   ]
 }
+
 
 
